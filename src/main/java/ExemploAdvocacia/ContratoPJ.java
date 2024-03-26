@@ -1,6 +1,6 @@
-package org.example;
+package ExemploAdvocacia;
 
-public class HistoricoReciboPJ implements Historico{
+public class ContratoPJ implements Contrato {
     public String emitir() {
         return "Historico Recibo pessoa juridica";
     }

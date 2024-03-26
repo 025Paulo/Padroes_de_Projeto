@@ -1,4 +1,4 @@
-package org.example;
+package ExemploAdvocacia;
 
 public interface Recibo {
     String emitir();

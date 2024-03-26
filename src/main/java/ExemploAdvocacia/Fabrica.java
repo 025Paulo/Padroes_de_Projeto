@@ -1,6 +1,6 @@
-package org.example;
+package ExemploAdvocacia;
 
 public interface Fabrica {
     Recibo createRecibo();
-    Historico createHistorico();
+    Contrato createContrato();
 }

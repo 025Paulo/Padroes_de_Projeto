@@ -1,21 +1,21 @@
-package org.example;
+package ExemploAdvocacia;
 
 public class Pessoa {
 
     private Recibo recibo;
-    private Historico historico;
+    private Contrato contrato;
 
     public Pessoa(Fabrica fabrica) {
         this.recibo = fabrica.createRecibo();
-        this.historico = fabrica.createHistorico();
+        this.contrato = fabrica.createContrato();
     }
 
     public String emitirRecibo(){
         return this.recibo.emitir();
     }
 
-    public String emitirHistorico(){
-        return this.historico.emitir();
+    public String emitirContrato(){
+        return this.contrato.emitir();
     }
 
 }

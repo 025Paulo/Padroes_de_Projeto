@@ -1,4 +1,4 @@
-package org.example;
+package ExemploAdvocacia;
 
 public class ReciboPJ implements Recibo{
     @Override

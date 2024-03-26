@@ -1,4 +1,4 @@
-package org.example;
+package ExemploAdvocacia;
 
 import org.junit.jupiter.api.Test;
 
@@ -24,14 +24,14 @@ class PessoaTest {
     void deveEmitirHistoricoPF () {
         Fabrica fabrica = new FabricaPF();
         Pessoa pessoa = new Pessoa(fabrica);
-        assertEquals("Historico Recibo pessoa fisica", pessoa.emitirHistorico());
+        assertEquals("Contrato pessoa fisica", pessoa.emitirContrato());
     }
 
     @Test
     void deveEmitirHistoricoPJ() {
         Fabrica fabrica = new FabricaPJ();
         Pessoa pessoa = new Pessoa(fabrica);
-        assertEquals("Historico Recibo pessoa juridica", pessoa.emitirHistorico()) ;
+        assertEquals("Historico Recibo pessoa juridica", pessoa.emitirContrato()) ;
     }
 
 }

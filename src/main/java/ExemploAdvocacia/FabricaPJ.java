@@ -1,4 +1,4 @@
-package org.example;
+package ExemploAdvocacia;
 
 public class FabricaPJ implements Fabrica {
 
@@ -8,7 +8,7 @@ public class FabricaPJ implements Fabrica {
     }
 
     @Override
-    public Historico createHistorico() {
-        return new HistoricoReciboPJ();
+    public Contrato createContrato() {
+        return new ContratoPJ();
     }
 }
