@@ -24,7 +24,7 @@ public class ServicoFactoryTest {
             IServico servico = ServicoFactory.obterServico("Conta fechada");
             fail();
         } catch (IllegalArgumentException e) {
-            assertEquals("Servico inválido", e.getMessage());
+            assertEquals("Servico inexistente", e.getMessage());
         }
     }
 }

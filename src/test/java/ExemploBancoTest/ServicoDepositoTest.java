@@ -5,17 +5,17 @@ import ExemploBanco.ServicoFactory;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ServicoDeposito {
+public class ServicoDepositoTest {
 
     @Test
     void deveExecutarDeposito() {
         IServico servico = ServicoFactory.obterServico("Deposito");
-        assertEquals("Deposito efetuado", servico.cancelar());
+        assertEquals("Deposito efetuado", servico.executar());
     }
 
     @Test
     void deveCancelarDeposito() {
         IServico servico = ServicoFactory.obterServico("Deposito");
-        assertEquals("Deposito cancelada", servico.cancelar());
+        assertEquals("Deposito cancelado", servico.cancelar());
     }
 }
