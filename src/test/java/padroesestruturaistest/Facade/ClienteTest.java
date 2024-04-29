@@ -1,6 +1,8 @@
-package padroesestruturais.Facade;
+package padroesestruturaistest.Facade;
 
 import org.junit.jupiter.api.Test;
+import padroesestruturais.Facade.Cliente;
+import padroesestruturais.Facade.ClienteBuilder;
 
 import static org.junit.Assert.assertEquals;
 

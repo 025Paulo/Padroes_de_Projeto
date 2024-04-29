@@ -1,6 +1,8 @@
 package padroesestruturais.Facade;
 
-public class Cliente {
+import ExemploClone.Jogador;
+
+public class Cliente implements Cloneable {
 
     public boolean quitarDivida() {
         return ClienteFacade.verificarPendenciasDivida(this);

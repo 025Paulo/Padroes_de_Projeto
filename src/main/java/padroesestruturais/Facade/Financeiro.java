@@ -9,4 +9,5 @@ public class Financeiro extends Setor{
     public static Financeiro getInstancia() {
         return financeiro;
     }
+
 }
