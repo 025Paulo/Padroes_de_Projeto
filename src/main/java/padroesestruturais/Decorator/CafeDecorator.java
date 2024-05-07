@@ -7,10 +7,10 @@ public abstract class CafeDecorator implements Cafe {
         this.cafe = cafe;
     }
 
-    public abstract String getCafeComAcucar();
+    public abstract String getCafeTipoComAcucar();
 
     public String getAcucar() {
-        return this.cafe.getAcucar() + "/" + this.getCafeComAcucar();
+        return this.cafe.getAcucar() + "/" + this.getCafeTipoComAcucar();
     }
 
     public abstract String getPrecoCafe();

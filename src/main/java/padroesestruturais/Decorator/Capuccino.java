@@ -5,8 +5,8 @@ public class Capuccino extends CafeDecorator{
         super(cafe);
     }
 
-    public String getCafeComAcucar() {
-        return "Capuccino sem acucar";
+    public String getCafeTipoComAcucar() {
+        return "Sem acucar";
     }
 
     public String getPrecoCafe() {

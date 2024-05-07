@@ -14,6 +14,13 @@ public class CafeTest {
     }
 
     @Test
+    void deveRetornarComAcucar() {
+        Cafe cafe = new CafeTipo("Cafe com/sem acucar");
+
+        assertEquals("Cafe", cafe.getAcucar());
+    }
+
+    @Test
     void deveRetornarPrecoCafePuro() {
         Cafe cafe = new CafePuro(new CafeTipo("Cafe Puro"));
 
@@ -36,16 +43,33 @@ public class CafeTest {
 
     @Test
     void deveRetornarCafePuroComAcucar() {
-        Cafe cafe = new CafeTipo("Acucar");
+        Cafe cafe = new CafeTipo("Cafe Puro", "Com acucar");
 
-        assertEquals("null", cafe.getAcucar());
+        Cafe cafePuro = new CafePuro(cafe);
+
+        assertEquals("Cafe Puro/2 reais", cafePuro.getPreco());
+        assertEquals("Com acucar/Com acucar", cafePuro.getAcucar());
     }
 
 
     @Test
     void deveRetornarCafeComLeiteSemAcucar() {
-        Cafe cafe = new CafePuro(new CafeTipo("Cafe Puro"));
+        Cafe cafe = new CafeTipo("Cafe com Leite", "Sem acucar");
 
-        assertEquals("Cafe Puro/Com acucar", cafe.getAcucar());
+        Cafe cafeComLeite = new CafeComLeite(cafe);
+
+        assertEquals("Cafe com Leite/4 reais", cafeComLeite.getPreco());
+        assertEquals("Sem acucar/Sem acucar", cafeComLeite.getAcucar());
     }
+
+    @Test
+    void deveRetornarCapuccinoSemAcucar() {
+        Cafe cafe = new CafeTipo("Capuccino", "Sem acucar");
+
+        Cafe capuccino = new Capuccino(cafe);
+
+        assertEquals("Capuccino/5 reais", capuccino.getPreco());
+        assertEquals("Sem acucar/Sem acucar", capuccino.getAcucar());
+    }
+
 }

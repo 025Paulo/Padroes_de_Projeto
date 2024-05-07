@@ -5,7 +5,7 @@ public class CafePuro extends CafeDecorator {
         super(cafe);
     }
 
-    public String getCafeComAcucar() {
+    public String getCafeTipoComAcucar() {
         return "Com acucar";
     }
 

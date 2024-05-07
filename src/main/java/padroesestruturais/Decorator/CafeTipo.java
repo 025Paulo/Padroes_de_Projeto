@@ -5,6 +5,12 @@ public class CafeTipo implements Cafe {
     public String acucar;
 
 
+    public CafeTipo(String preco, String acucar) {
+        this.preco = preco;
+        this.acucar = acucar;
+
+    }
+
     public CafeTipo(String preco) {
         this.preco = preco;
     }
@@ -12,12 +18,8 @@ public class CafeTipo implements Cafe {
     public String getPreco() {
         return preco;
     }
-    
 
     public String getAcucar() {
         return acucar;
     }
-
-
-
 }
