@@ -23,3 +23,4 @@ public class MicrosftTranslatorTest {
         assertEquals("Traducao Frances - Microsoft Translator", traducaoFrances.traduzir());
     }
 }
+  
