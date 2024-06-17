@@ -13,9 +13,34 @@ public class Paciente {
         this.estado = estado;
     }
 
+    public boolean internar() {
+        return estado.internar(this);
+    }
 
+    public boolean alta() {
+        return estado.alta(this);
+    }
 
-    //////// final abaixo
+    public boolean cirurgia() {
+        return estado.cirurgia(this);
+    }
+
+    public boolean observacao() {
+        return estado.observacao(this);
+    }
+
+    public boolean tratamento() {
+        return estado.tratamento(this);
+    }
+
+    public boolean internarCTI() {
+        return estado.internarCTI(this);
+    }
+
+    public boolean internarUTI() {
+        return estado.internarUTI(this);
+    }
+
 
     public String getNomeEstado() {
         return estado.getEstado();
